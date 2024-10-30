@@ -71,3 +71,22 @@ Ska man styla i index.css eller App.css filen? Vad är skillnaden?
 # Svar
 
 Styla per komponent, eller i index.css om det är något globalt (`*` selector exempelvis).
+
+---
+
+# Fråga
+
+Jag märkte att man kan använda "kod" i inline-styling som detta  :
+
+```
+style={{ 
+backgroundColor: isBlue ? "blue" : "red" 
+}}
+```
+
+
+Är detta något som används eller är det bättre att använda andra sätt?
+
+# Svar
+
+Det är inte ovanligt. När det kommer till mindre grejer (som exemplet) så är det bra. Om man dock behöver byta på fler egenskaper så är `className` bättre.
